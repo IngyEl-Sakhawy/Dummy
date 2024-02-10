@@ -96,6 +96,12 @@
 // showDetails("ingy",23,"yes");
 // showDetails("yes",23,"ingy");
 
-let names=(...names)=> `[${names.join(",")}]`;
+// let names=(...names)=> `[${names.join(",")}] => Done !`;
+// document.write(names("ahmed","omar","alaa"));
 
-document.write(names("ahmed","omar","alaa"));
+
+let myNum = [20,50,10,60];
+
+let calc = (one, two, ...nums)=>one+two+nums[0];
+
+document.write(calc(10,myNum[0],myNum[1]));
