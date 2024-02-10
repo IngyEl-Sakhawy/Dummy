@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+</head>
+<body>
+    <h1></h1>
+
+    <script>
+     var contacts=[];
+     var addcontact = function(){
+      var nm = prompt("Enter name:");
+      var ph = prompt("Enter phone number:");
+      var contact = { name: nm, phone: ph};
+      contacts.push(contact);
+
+     }  
+
+     var search= function(){
+      var name = prompt ("Enter name to search by:");
+
+      for (var i = 0; i < contacts.length; i++) {
+        if (contacts[i].name === name) {
+            alert("Result of search is " + contacts[i].name + "  " + contacts[i].phone);
+            return; 
+        }
+    }
+    alert("No contact found with the given name: " + searchip);
+     }
+
+     while(true){
+     var choice = parseInt(prompt(
+        "1. Add to Contacts \n2. Seach"
+     ));
+
+        switch(choice){
+            case 1 :
+                addcontact();
+                break;
+            case 2 :
+                search();
+                break;
+            default:
+                alert("pick from the list please!");
+                break;
+        }   
+    }
+    </script>
+</body>
+</html>

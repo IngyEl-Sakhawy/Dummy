@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+</head>
+<body>
+    <h1></h1>
+
+    <script>
+
+     var s = prompt("enter a string:");
+     var count =0;
+     var len =s.length;
+     alert(len)
+
+     for (var i=0;i<len; i++)
+     {
+        var current= s[i];
+        alert (current);
+        if (current =="a" || current =="e" || current =="i" || current =="o"|| current =="u")
+        {
+            count++;
+        }
+
+     }
+
+     alert("your vowles count ="+ count);
+    </script>
+</body>
+</html>

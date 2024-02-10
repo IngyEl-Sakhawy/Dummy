@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+</head>
+<body>
+    <h1></h1>
+
+    <script>
+       var fName =prompt("What is your first name ?");
+       var lName =prompt("what is your last name?");
+
+       var conf = confirm("is that your name"+ fName+ " " +lName+ " ?");
+
+       if(conf)
+       {
+         alert ("Welcome"+fName+" "+ lName);
+       }
+       else 
+       {
+        alert("BYE");
+       }
+       
+       var birth= prompt("what is your birth year?");
+       var age = 2023-Number(birth)
+       
+       alert("Welcome"+fName+" "+lName+ " you are "+ age+ " years old");
+       
+    </script>
+</body>
+</html>

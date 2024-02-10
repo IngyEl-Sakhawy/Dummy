@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+</head>
+<body>
+    <h1></h1>
+
+    <script>
+     var contacts=[];
+     function addContact() {
+    var name = prompt("Enter the name of the contact:");
+    var phoneNumber = prompt("Enter the phone number:");
+
+   
+    var contact = { name: name,phoneNumber: phoneNumber};
+
+   
+    contacts.push(contact);
+    alert("Contact added successfully!");
+}
+
+function searchContact() {
+    var searchip = prompt("Enter something to search for");
+    for (var i = 0; i < contacts.length; i++) {
+        if (contacts[i].name === searchip) {
+            alert("Result of search is " + contacts[i].name + "  " + contacts[i].phoneNumber);
+            return; 
+        }
+    }
+    alert("No contact found with the given name: " + searchip);
+}
+     
+       while (true) {
+    
+    var operation = prompt("Enter operation (add/search/exit):").toLowerCase();
+
+    
+    switch (operation) {
+        case "add":
+            addContact();
+            break;
+        case "search":
+            searchContact();
+            break;
+        case "exit":
+            alert("Exiting phone book app.");
+            
+            break;
+        default:
+            alert("Invalid operation. Please enter 'add', 'search', or 'exit'.");
+            break;
+    }
+}
+    </script>
+</body>
+</html>

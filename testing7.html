@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+</head>
+<body>
+    <h1></h1>
+
+    <script>
+       var numnum=prompt("Enter number of nubers");
+        cal(numnum);
+       function cal(num)
+       {
+        var ar =[];
+        var sum=0;
+        for (var i=0;i<num;i++)
+        {
+            var input=prompt("enter number"+ i+"=");
+            ar[i]=input
+            sum+=Number(ar[i]);
+        }
+        alert ("Your total is = "+ sum+ "and the average is =" + Number(sum)/Number(numnum));
+       }
+       
+    </script>
+</body>
+</html>
