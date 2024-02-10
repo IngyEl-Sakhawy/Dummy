@@ -65,3 +65,55 @@
 
 // }
 
+
+
+function showDetails(a,b,c){
+    let age=0;
+    let result="unknown";
+    let fname="unknown";
+
+    if (typeof a === 'string' && a!= "yes" && a!="no"){
+        fname=a;
+    } else if (typeof b === 'string' && b!= "yes" && b!="no"){
+        fname =b;
+    } else if (typeof c === 'string' && c!= "yes" && c!="no"){
+        fname =c;
+    }
+    if (typeof a==="number"){
+        age=a;
+    } else if (typeof b=== "number"){
+        age =b;
+    } else if (typeof c=== "number"){
+        age =c;
+    }
+    if (a== "yes" || a== "no"){
+        if (a=="yes"){
+            result="HIRED";
+        } else {
+            result="not HIRED";
+        }
+        
+    } else if (b== "yes" || b== "no"){
+        if (b=="yes"){
+            result="HIRED";
+        } else {
+            result="not HIRED";
+        }
+
+    } else if (c== "yes" || c== "no"){
+        if (c=="yes"){
+            result="HIRED";
+        } else {
+            result="not HIRED";
+        }
+    }
+
+    document.write(`hello ${fname} , your age is ${age}, you are ${result}`);
+}
+
+
+
+
+
+showDetails("ingy",23,"yes");
+showDetails("no",23,"ingy");
