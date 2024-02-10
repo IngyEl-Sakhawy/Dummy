@@ -86,26 +86,12 @@ function showDetails(a,b,c){
     } else if (typeof c=== "number"){
         age =c;
     }
-    if (a== "yes" || a== "no"){
-        if (a=="yes"){
-            result="HIRED";
-        } else {
-            result="not HIRED";
-        }
-        
-    } else if (b== "yes" || b== "no"){
-        if (b=="yes"){
-            result="HIRED";
-        } else {
-            result="not HIRED";
-        }
-
-    } else if (c== "yes" || c== "no"){
-        if (c=="yes"){
-            result="HIRED";
-        } else {
-            result="not HIRED";
-        }
+    if (a === "yes" || a === "no") {
+        result = a === "yes" ? "HIRED" : "not HIRED";
+    } else if (b === "yes" || b === "no") {
+        result = b === "yes" ? "HIRED" : "not HIRED";
+    } else if (c === "yes" || c === "no") {
+        result = c === "yes" ? "HIRED" : "not HIRED";
     }
 
     document.write(`hello ${fname} , your age is ${age}, you are ${result}`);
@@ -116,4 +102,4 @@ function showDetails(a,b,c){
 
 
 showDetails("ingy",23,"yes");
-showDetails("no",23,"ingy");
+showDetails("yes",23,"ingy");
