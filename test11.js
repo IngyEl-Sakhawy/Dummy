@@ -100,8 +100,22 @@
 // document.write(names("ahmed","omar","alaa"));
 
 
-let myNum = [20,50,10,60];
+// let myNum = [20,50,10,60];
 
-let calc = (one, two, ...nums)=>one+two+nums[0];
+// let calc = (one, two, ...nums)=>one+two+nums[0];
 
-document.write(calc(10,myNum[0],myNum[1]));
+// document.write(calc(10,myNum[0],myNum[1]));
+
+let mix="A13BS2ZX";
+
+let filtered = mix.split("").filter(function(el){
+    return isNaN(el)? "":el;
+});
+
+console.log(filtered);
+
+let mult = filtered.map(function(el){
+    return el*el;
+});
+
+console.log(mult);
